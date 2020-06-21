@@ -9,7 +9,7 @@ import Order from './pages/order'
 import OrderConfirm from './pages/orderConfirm'
 import OrderList from './pages/orderList'
 import OrderPay from './pages/orderPay'
-
+import Alipay from './pages/alipay'
 Vue.use(Router);
 export default new Router({
     routes:[
@@ -41,6 +41,7 @@ export default new Router({
                     name:'order',
                     component:Order
                 },{
+                    // 视频中path是list和confirm
                     path:'/orderConfirm',
                     name:'order-confirm',
                     component:OrderConfirm
@@ -52,6 +53,10 @@ export default new Router({
                     path:'/orderPay',
                     name:'order-pay',
                     component:OrderPay
+                },{
+                    path:'/alipay',
+                    name:'alipay',
+                    component:Alipay
                 }
             ]
         }
