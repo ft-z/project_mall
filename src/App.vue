@@ -5,16 +5,13 @@
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+// import HelloWorld from "./components/HelloWorld.vue";
 // import axios from "axios";
-import jsonp from 'jsonp';
+// import jsonp from 'jsonp';
 
 export default {
   name: "App",
   components: {
-
-  },
-  data:{
 
   },
   mounted() {
