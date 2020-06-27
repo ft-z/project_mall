@@ -8,16 +8,17 @@
 // import HelloWorld from "./components/HelloWorld.vue";
 // import axios from "axios";
 // import jsonp from 'jsonp';
-
+import storage from './storage/index'
+// import storage from './storage'
 export default {
   name: "App",
   components: {
 
   },
   mounted() {
-    return{
-
-    }
+    // storage.setItem('abc',{'a':1},'user');
+    // storage.clear('a'); //删除和“user”同级的“a"
+    storage.clear('a','user');
   }
 };
 </script>
