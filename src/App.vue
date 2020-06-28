@@ -24,12 +24,16 @@ export default {
     // storage.clear('a','user');
 
     // 本地加载请求静态json文件
-    this.axios.get("/mock/user/login.json").then(res => {
-      this.res = res;
-    });
+    // this.axios.get("/mock/user/login.json").then(res => {
+    //   this.res = res;
+    // });
     // 使用easy-mocl平台实现数据mock
-    this.axios.get("/mock/user/login.json").then(res => {
-      this.res = res;
+    // this.axios.get("/user/login").then(res => {
+    //   this.res = res;
+    // });
+    // 本地集成mockjs实现数据mock
+    this.axios.get('/user/login').then((res)=>{
+      this.res=res;
     });
   }
 };
