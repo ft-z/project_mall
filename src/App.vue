@@ -14,9 +14,9 @@ export default {
   name: "app",
   components: {},
   data() {
-    return {
-      res: {}
-    };
+    // return {
+    //   res: {}
+    // };
   },
   mounted() {
     // storage.setItem('abc',{'a':1},'user');
@@ -32,9 +32,9 @@ export default {
     //   this.res = res;
     // });
     // 本地集成mockjs实现数据mock
-    this.axios.get('/user/login').then((res)=>{
-      this.res=res;
-    });
+    // this.axios.get('/user/login').then((res)=>{
+    //   this.res=res;
+    // });
   }
 };
 </script>
