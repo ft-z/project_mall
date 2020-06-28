@@ -8,17 +8,29 @@
 // import HelloWorld from "./components/HelloWorld.vue";
 // import axios from "axios";
 // import jsonp from 'jsonp';
-import storage from './storage/index'
+// import storage from './storage/index'
 // import storage from './storage'
 export default {
-  name: "App",
-  components: {
-
+  name: "app",
+  components: {},
+  data() {
+    return {
+      res: {}
+    };
   },
   mounted() {
     // storage.setItem('abc',{'a':1},'user');
     // storage.clear('a'); //删除和“user”同级的“a"
-    storage.clear('a','user');
+    // storage.clear('a','user');
+
+    // 本地加载请求静态json文件
+    this.axios.get("/mock/user/login.json").then(res => {
+      this.res = res;
+    });
+    // 使用easy-mocl平台实现数据mock
+    this.axios.get("/mock/user/login.json").then(res => {
+      this.res = res;
+    });
   }
 };
 </script>
