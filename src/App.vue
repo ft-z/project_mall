@@ -13,11 +13,11 @@
 export default {
   name: "app",
   components: {},
-  data() {
-    // return {
-    //   res: {}
-    // };
-  },
+  // data() {
+  //   return {
+  //     res: {}
+  //   };
+  // },
   mounted() {
     // storage.setItem('abc',{'a':1},'user');
     // storage.clear('a'); //删除和“user”同级的“a"
@@ -40,12 +40,13 @@ export default {
 </script>
 
 <style>
-#app {
+/* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
+} */
+@import './assets/scss/reset.scss'
 </style>
