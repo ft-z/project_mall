@@ -12,8 +12,8 @@ if(mock){
 }
 
 // 根据前端的跨域方式做调整
-// axios.defaults.baseURL='/api';
-axios.defaults.baseURL='https://www.easy-mock.com/mock/5ef85f12d932361141717aa1/mimall';
+axios.defaults.baseURL='/api';
+// axios.defaults.baseURL='https://www.easy-mock.com/mock/5ef85f12d932361141717aa1/mimall';
 axios.defaults.timeout=8000;
 
 // 根据环境变量获取不同请求地址
